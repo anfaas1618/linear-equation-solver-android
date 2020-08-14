@@ -4,18 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFBD8"
     android:columnCount="3"
     android:rowCount="3"
     tools:context=".MainActivity">
 
     <GridLayout
+        android:id="@+id/gridLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_row="4"
+        android:layout_marginTop="84dp"
         android:columnCount="3"
         android:rowCount="3"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -24,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:hint="0,0"
-             android:inputType="number"
+            android:inputType="number"
             android:textSize="40dp" />
 
         <EditText
@@ -32,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:hint="0,0"
-             android:inputType="number"
+            android:inputType="number"
             android:textSize="40dp" />
 
         <EditText
@@ -40,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:hint="0,0"
-             android:inputType="number"
+            android:inputType="number"
             android:textSize="40dp" />
 
         <EditText
@@ -48,7 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:hint="0,0"
-             android:inputType="number"
+            android:inputType="number"
             android:textSize="40dp" />
 
         <EditText
@@ -56,7 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:hint="0,0"
-             android:inputType="number"
+            android:inputType="number"
             android:textSize="40dp" />
 
         <EditText
@@ -64,7 +66,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:hint="0,0"
-             android:inputType="number"
+            android:inputType="number"
             android:textSize="40dp" />
 
         <EditText
@@ -72,7 +74,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:hint="0,0"
-             android:inputType="number"
+            android:inputType="number"
             android:textSize="40dp" />
 
         <EditText
@@ -80,7 +82,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:hint="0,0"
-             android:inputType="number"
+            android:inputType="number"
 
             android:textSize="40dp" />
 
@@ -89,10 +91,24 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:hint="0,0"
-             android:inputType="number"
+            android:inputType="number"
             android:textSize="40dp" />
     </GridLayout>
 
+    <Button
+        android:id="@+id/btnFindSol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@color/colorAccent"
+        android:fontFamily="sans-serif-black"
+        android:text="find"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:elevation="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
